@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.csm-menu-item {
+    @apply hover:text-gray-800 relative after:lg:absolute after:lg:left-0 after:lg:bottom-0 after:lg:bg-coffee-200 after:lg:h-0.5 after:lg:w-0 hover:after:lg:w-full after:lg:transition-all after:lg:ease-in-out after:lg:duration-300;
+}
+
+.csm-icon {
+    @apply w-5 h-5 inline-block;
+}
+
+.countpill {
+    @apply text-xs text-center rounded-full px-1.5 bg-orange-400 text-white;
+}
+
+.menu-expanded {
+    @apply absolute lg:relative top-10 right-0 w-full bg-white z-10 shadow-md lg:top-0 lg:right-0 lg:shadow-none lg:bg-transparent lg:w-full lg:z-0 text-center lg:text-left animate-fade-in-down;
+}
+
+.sub-headingline {
+    @apply flex justify-center items-center mb-24;
+}
+
+.sub-headingline-line {
+    @apply w-4 lg:w-8 h-px bg-gray-200;
+}
+
+.sub-headingline-text {
+    @apply text-center uppercase mx-5 tracking-widest text-gray-500 font-medium text-[12px];
+}

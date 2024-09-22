@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" type="text/css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://cdn.prod.website-files.com/5be96251aaba7a7b19ecdf69/5be96251aaba7a9b50ecdfc8_favicon%202.jpg" type="image/x-icon">
+    <title>Coffee Style</title>
+
+    <script src="./main.js" type="text/javascript" async></script>
+</head>
+<body>
+    <div id="root">
+        <div class="content-wrapper max-w-screen-2xl text-base font-Karla mx-auto">
+            <header class="p-6 mx-auto">
+                <nav class="flex flex-row justify-between items-center relative">
+                    <!-- * Logo -->
+                    <div class="logo basis-2/6 text-center text-xl font-semibold cursor-pointer">Coffee Style.</div>
+
+                    <!-- * Menu -->
+                    <ul id="csm-menu" class="basis-3/6 hidden lg:flex lg:items-center lg:justify-end lg:gap-8 uppercase text-sm text-gray-500 font-medium">
+                        <li><a class="csm-menu-item" href="#">Home</a></li>
+                        <li><a class="csm-menu-item" href="#">Products</a></li>
+                        <li><a class="csm-menu-item" href="#">Blog</a></li>
+                        <li><a class="csm-menu-item" href="#">About</a></li>
+                        <li><a class="csm-menu-item" href="#">Contact</a></li>
+                        <li><a class="csm-menu-item" href="#">StyleGuide</a></li>
+                        <li><a class="csm-menu-item" href="#">Mint</a></li>
+                    </ul>
+
+                    <!-- * Cart -->
+                    <ul class="basis-3/6 lg:basis-1/6 flex justify-end lg:justify-start items-center ml-16 uppercase text-sm text-gray-500 font-medium">
+                        <li>
+                            <a class="flex items-center" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 csm-icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                </svg>                              
+                                <span class="mx-2">Cart</span>
+                                <span class="countpill">0</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- * Menu Mobile -->
+                    <div class="lg:hidden basis-1/6 flex items-center cursor-pointer px-2 sm:px-4">
+                        <svg id="csm-toggle-menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>                          
+                    </div>
+                </nav>
+            </header>
+        
+            <main>
+                <!-- * Slider -->
+                <div class="slider h-[530px] bg-[url('./img/bg-slider.jpg')] bg-cover bg-no-repeat bg-bottom">
+                    <div class="w-full h-full flex items-center justify-center bg-gray-900 bg-opacity-50">
+                        <div class="mx-16 text-center text-white">
+                            <div class="uppercase mb-6 tracking-wide font-bold">Best Place To By Coffee</div>
+                            <div class="font-medium text-5xl mb-6">Coffee Mugs</div>
+                            <div class="font-medium text-lg mb-8">
+                                The most versatile furniture system ever created. Designed to fit your life, made to move and grow.
+                            </div>
+                            <div class="bg-white w-fit mx-auto py-4 px-6 cursor-pointer hover:bg-opacity-90">
+                                <div class="text-gray-900 uppercase tracking-wider text-sm font-bold">
+                                    Explore Our Products
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- * Story -->
+                <div class="story">
+                    <div class="w-full h-full flex justify-center items-center">
+                        <div class="px-5 max-w-[700px] mx-auto py-32 text-center">
+                            <div class="text-3xl leading-10 mb-6">
+                                Even the all-powerful Pointing has no control about the blind texts.
+                            </div>
+                            <div class="text-gray-500 leading-7 mb-6">
+                                It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+                            </div>
+                            <div><a class="text-coffee-400 hover:text-coffee-600 relative after:absolute after:-bottom-2 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-coffee-600 after:lg:transition-all after:lg:ease-in-out after:lg:duration-200" href="#">Read the full Story</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- * Featured Mugs -->
+                <div class="sub-headingline">
+                    <div class="sub-headingline-line"></div>
+                    <div class="sub-headingline-text">Featured Mugs</div>
+                    <div class="sub-headingline-line"></div>
+                </div>
+                <div class="featured-mugs w-[65%] mx-auto mb-24">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="card">
+                            <div class="h-[540px] bg-[url('./img/featured-mugs-1.jpg')] bg-cover bg-no-repeat bg-center">
+                                <a href="#" alt="Featured Mugs 1"></a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="h-[540px] bg-[url('./img/featured-mugs-2.jpg')] bg-cover bg-no-repeat bg-center">
+                                <a href="#" alt="Featured Mugs 2"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- * More Products -->
+                <div class="sub-headingline">
+                    <div class="sub-headingline-line"></div>
+                    <div class="sub-headingline-text">More Products</div>
+                    <div class="sub-headingline-line"></div>
+                </div>
+
+                <!-- * Buy 2 mugs and get a coffee magazine free -->
+                <div class="sub-headingline">
+                    <div class="sub-headingline-line"></div>
+                    <div class="sub-headingline-text">Buy 2 mugs and get a coffee magazine free</div>
+                    <div class="sub-headingline-line"></div>
+                </div>
+
+                <!-- * Behind the mugs, lifestyle stories -->
+                <div class="sub-headingline">
+                    <div class="sub-headingline-line"></div>
+                    <div class="sub-headingline-text">Behind the mugs, lifestyle stories</div>
+                    <div class="sub-headingline-line"></div>
+                </div>
+            </main>
+        
+            <footer></footer>
+        </div>
+    </div>
+</body>
+</html>
